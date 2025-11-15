@@ -110,6 +110,7 @@ export const assets = {
     right_arrow_bold_dark
 };
 
+// Work Data
 export const workData = [
   {
     title: 'Frontend project',
@@ -137,7 +138,7 @@ export const workData = [
   },
 ];
 
-
+// Services Data
 export const serviceData = [
     { icon: assets.last_web, title: 'Web design', description: 'Develop responsive websites using React, Next.js, Tailwind CSS, and modern front-end practices.', link: '' },
     { icon: assets.back_end, title: 'Backend & APIs', description: 'Build secure RESTful APIs and manage databases using Node.js, Express, MongoDB, and MySQL....', link: '' },
@@ -145,16 +146,20 @@ export const serviceData = [
     { icon: assets.seo, title: 'SEO & Social Media', description: 'Boost online visibility through SEO tools like Ahrefs, SE Ranking and manage social media campaigns effectively.', link: '' },
 ]
 
+// Info List Data
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
+// Tools Data
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
 
+
+// Projects Data
 export const allProjects = [
     {
       title: 'Morgan',
@@ -182,6 +187,8 @@ export const allProjects = [
     },
   ];
 
+
+// Programming Testimonials Data
     export const testimonialsData = [
     {
       name: "Frontend Expert",
@@ -197,6 +204,8 @@ export const allProjects = [
     }
   ];
 
+
+// Digital Marketing Testimonials Data
   export const digitalMarketingTestimonials = [
         {
       name: "Digital Marketing and E-commerce ",
@@ -217,65 +226,66 @@ export const allProjects = [
       name:"Digital Marketing ",
       company:"Udemy",
       description:"Demonstrated ability to strategize and execute comprehensive digital marketing plans, leveraging SEO, content marketing, and social media to boost online presence and engagement.",
-      bgImage:'/udemy digital marketing course ahmed.png',
+      bgImage:'/google anlystics ahmed.png',
       rating: 5
     }
   ]
-// أضف هذا الكود في ملف assets/assets.js
+
+  // Marketing Results Data
 export const marketingResults = [
   {
     id: 1,
-    title: "حملة فيسبوك إعلانية - زيادة المبيعات",
-    client: "شركة تجارية",
-    description: "زيادة المبيعات بنسبة 300% خلال 3 أشهر من خلال استراتيجية تسويق متكاملة على منصات التواصل الاجتماعي",
-    beforeImage: '/marketing-before-1.jpg',
-    afterImage: '/marketing-after-1.jpg',
+    title: "Google Ads Campaign – Boosting Sales",
+    client: "E-commerce Company",
+    description: "Achieved a 300% increase in sales within 3 months through targeted Google Ads campaigns.",
+    beforeImage: '/marketing before google.jpg',
+   
     metrics: {
       revenue: "+300%",
       engagement: "+450%",
       conversion: "+5.2%",
-      period: "3 أشهر"
+      period: "3 months"
     },
-    platforms: ['Facebook', 'Instagram', 'Google Ads'],
-    category: "التجارة الإلكترونية"
+    platforms: ['Google'],
+    category: "E-commerce"
   },
   {
     id: 2,
-    title: "استراتيجية SEO متكاملة",
-    client: "موقع خدمي",
-    description: "تحسين ترتيب الموقع في محركات البحث وزيادة الزوار العضويين بنسبة 200% خلال 6 أشهر",
-    beforeImage: '/marketing-before-2.jpg',
-    afterImage: '/marketing-after-2.jpg',
+    title: "TikTok Brand Awareness Campaign",
+    client: "Fashion Brand",
+    description: "Created viral TikTok content resulting in a significant increase in brand engagement and followers.",
+    beforeImage: '/marketing before tiktok.webp',
+ 
     metrics: {
-      traffic: "+200%",
-      ranking: "الصفحة الأولى",
-      leads: "+150%",
-      period: "6 أشهر"
+      views: "2M+",
+      engagement: "+350%",
+      followers: "+50K",
+      period: "2 months"
     },
-    platforms: ['SEO', 'Content Marketing', 'Google Analytics'],
-    category: "التحسين لمحركات البحث"
+    platforms: ['TikTok'],
+    category: "Social Media"
   },
   {
-    id: 3,
-    title: "حملة تسويق بالمحتوى",
-    client: "علامة تجارية",
-    description: "بناء استراتيجية محتوى متكاملة ساهمت في زيادة الوعي بالعلامة التجارية والمشاركة",
-    beforeImage: '/marketing-before-3.jpg',
-    afterImage: '/marketing-after-3.jpg',
+    id: 4,
+    title: "Meta Ads – E-commerce Growth",
+    client: "Online Store",
+    description: "Optimized Facebook & Instagram ads to increase revenue and conversion rates.",
+    beforeImage: '/marketing before meta.jpg',
+
     metrics: {
-      engagement: "+300%",
-      followers: "+25K",
-      reach: "+500%",
-      period: "4 أشهر"
+      revenue: "+250%",
+      engagement: "+400%",
+      conversion: "+6%",
+      period: "4 months"
     },
-    platforms: ['Content', 'Social Media', 'Email Marketing'],
-    category: "تسويق المحتوى"
+    platforms: ['Meta'], // Facebook & Instagram
+    category: "Social Media"
   }
 ];
 
 export const marketingStats = [
-  { number: "150%", label: "متوسط زيادة المبيعات", icon: "📈" },
-  { number: "3M+", label: "وصول للحملات", icon: "👥" },
-  { number: "95%", label: "رضا العملاء", icon: "⭐" },
-  { number: "50+", label: "مشروع ناجح", icon: "🚀" }
+  { number: "150%", label: "Average Sales Growth", icon: "📈" },
+  { number: "3M+", label: "Campaign Reach", icon: "👥" },
+  { number: "95%", label: "Client Satisfaction", icon: "⭐" },
+  { number: "50+", label: "Successful Projects", icon: "🚀" }
 ];

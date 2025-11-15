@@ -1,11 +1,20 @@
 'use client';
 import { assets } from '../../../assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from "next-themes";
 
 const AboutMe = () => {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // يمنع العرض قبل تحميل الثيم فعلياً
+
   const isDarkMode = theme === "dark";
 
   return (

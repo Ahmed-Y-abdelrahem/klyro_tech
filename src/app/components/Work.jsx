@@ -30,9 +30,9 @@ const Work = () => {
         My Latest Work
       </h2>
 
-      <p className="text-center max-w-4xl text-gray-500 font-Ovo mt-4 mb-6 dark:text-gray-300">
+      <p className="text-center max-w-5xl text-gray-500 font-Ovo mt-4 mb-6 dark:text-gray-300">
         I create tailored digital solutions that help businesses grow, combining 
-        marketing strategy, B2B sales expertise, and full-stack web development. 
+        marketing strategy, B2B sales expertise, and full-stack web development. <br /> 
         Each project showcases my commitment to delivering measurable results 
         and sustainable growth.
       </p>
@@ -71,7 +71,7 @@ const Work = () => {
         ))}
       </div>
 
-      <a
+      {/* <a
         href="#"
         onClick={(e) => e.preventDefault()}
         className="w-max flex justify-center items-center border-[0.8px] shadow-lg shadow-[#7768c3]
@@ -80,7 +80,7 @@ const Work = () => {
       >
         Show more
         <Image src={assets.right_arrow_bold} alt="right arrow" className="w-4" />
-      </a>
+      </a> */}
     </div>
   );
 };
