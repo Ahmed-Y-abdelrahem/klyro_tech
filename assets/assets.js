@@ -185,6 +185,24 @@ export const allProjects = [
       bgImage: '/GAME_OVER.png',
       link:"https://game-over-woad.vercel.app/"
     },
+    {
+      title: 'ECO contracting CO.',
+      description: 'construction and contracting services',
+      bgImage: '/eco.png',
+      link:"https://ecolmtd.com/"
+    },
+    {
+      title: 'ALMEER',
+      description: 'construction and contracting services',
+      bgImage: '/almeer.png',
+      link:"https://www.almeer-saudi.com/"
+    },
+        {
+      title: 'DALLAH Hospital ',
+      description: 'Advanced medical care with modern healthcare solutions',
+      bgImage: '/dalla.png',
+      link:"https://www.dallah-hospital.com/arabic/home"
+    },
   ];
 
 

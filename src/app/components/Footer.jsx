@@ -36,7 +36,7 @@ const Footer = () => {
             className="w-6 transition-all duration-300"
           />
           <span className="text-gray-700 dark:text-gray-300 transition-colors duration-500">
-            ahmed.baakhet@gmail.com
+            KlyroTech@outlook.com
           </span>
         </div>
       </div>
