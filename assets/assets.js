@@ -197,12 +197,7 @@ export const allProjects = [
       bgImage: '/almeer.png',
       link:"https://www.almeer-saudi.com/"
     },
-        {
-      title: 'DALLAH Hospital ',
-      description: 'Advanced medical care with modern healthcare solutions',
-      bgImage: '/dalla.png',
-      link:"https://www.dallah-hospital.com/arabic/home"
-    },
+       
   ];
 
 
