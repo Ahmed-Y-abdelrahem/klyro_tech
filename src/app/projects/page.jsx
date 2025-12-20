@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ProjectsPage = () => {
   return (
-<div className="min-h-screen bg-white dark:bg-[#11001f] py-12 px-4 sm:px-6 lg:px-8">
+<div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

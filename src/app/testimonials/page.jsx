@@ -58,24 +58,24 @@ const TestimonialsPage = () => {
           </motion.div>
         </div>
 
-        <div className="relative h-[600px] sm:h-[500px] md:h-[600px] flex items-center justify-center">
+        <div className="relative flex justify-center items-center w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
 
-          {/* Navigation Buttons - Same as Marketing Page */}
+          {/* Navigation Buttons */}
           <button
             onClick={() => prev(setCurrent, len)}
-            className="absolute sm:left-0 -left-8 z-[999999999] p-3 bg-[#ada1f9] rounded-xl shadow-lg hover:scale-110 transition-all"
+            className="absolute sm:left-0 -left-8 z-30 p-3 bg-[#ada1f9] rounded-xl shadow-lg hover:scale-110 transition-all"
           >
             <ChevronLeft size={24} className="text-white dark:text-[#11001f]" />
           </button>
 
           <button
             onClick={() => next(setCurrent, len)}
-            className="absolute sm:right-0 -right-8 z-[999999999] p-3 bg-[#ada1f9] rounded-xl shadow-lg hover:scale-110 transition-all"
+            className="absolute sm:right-0 -right-8 z-30 p-3 bg-[#ada1f9] rounded-xl shadow-lg hover:scale-110 transition-all"
           >
             <ChevronRight size={24} className="text-white dark:text-[#11001f]" />
           </button>
 
-          <div className="relative w-full max-w-4xl h-full">
+          <div className="relative w-full max-w-5xl h-full">
             <AnimatePresence mode="wait">
               {data.map((t, i) => {
                 if (i !== current) return null;
@@ -86,13 +86,14 @@ const TestimonialsPage = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -100 }}
                     transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-                    className="relative w-full h-full bg-white dark:bg-[#11001f] rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-2xl group"
+                    className="relative w-full h-full bg-white dark:bg-[#11001f] rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-2xl flex flex-col md:flex-row gap-6 p-4 md:p-6 group"
                   >
-                    <div className="absolute inset-0 flex justify-center items-center bg-black/10">
+                    {/* Image */}
+                    <div className="md:w-1/2 flex justify-center items-center">
                       <img
                         src={t.bgImage}
                         alt={t.name}
-                        className="max-w-full max-h-full object-contain"
+                        className="max-w-full max-h-[400px] object-contain rounded-2xl shadow-md"
                         onError={(e) => {
                           e.target.src =
                             'https://via.placeholder.com/600x400/ada1f9/fff?text=Certificate';
@@ -100,26 +101,20 @@ const TestimonialsPage = () => {
                       />
                     </div>
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/50 backdrop-blur-md border-t border-white/10 z-10">
-                      <div className="flex justify-between items-center">
-                        <div>
-                          <h3 className="font-Ovo text-xl font-semibold text-white drop-shadow-md">
-                            {t.name}
-                          </h3>
-                          <p className="text-gray-300 text-sm">{t.company}</p>
-                        </div>
-                        <div className="flex gap-1">{renderStars(t.rating || 5)}</div>
+                    {/* Details */}
+                    <div className="md:w-1/2 flex flex-col justify-between p-4 md:p-0">
+                      <div>
+                        <h3 className="font-Ovo text-xl font-semibold text-gray-900 dark:text-white mb-1">
+                          {t.name}
+                        </h3>
+                        <p className="text-gray-500 dark:text-gray-300 mb-3">{t.company}</p>
+                        <div className="flex gap-1 mb-4">{renderStars(t.rating || 5)}</div>
+                        <p className="text-gray-600 dark:text-gray-400 font-Ovo leading-relaxed">
+                          {t.description}
+                        </p>
                       </div>
-                    </div>
 
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/80 backdrop-blur-md flex flex-col justify-center items-center text-center p-8 z-30">
-                      <p className="font-Ovo text-lg text-gray-100 mb-4 leading-relaxed max-w-xl">
-                        {t.description}
-                      </p>
-
-                      <div className="flex gap-4 mt-4 flex-wrap justify-center">
+                      <div className="flex gap-4 mt-4 flex-wrap">
                         <div className="flex items-center gap-2 text-[#ada1f9]">
                           <Award size={16} />
                           <span className="text-sm font-Ovo">Verified Credential</span>
@@ -137,13 +132,16 @@ const TestimonialsPage = () => {
           </div>
         </div>
 
+        {/* Pagination Dots */}
         <div className="flex justify-center gap-3 mt-6">
           {data.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrent(idx)}
               className={`w-3 h-3 rounded-full transition-all ${
-                idx === current ? 'bg-[#ada1f9] scale-125' : 'bg-gray-400 dark:bg-gray-600 hover:bg-gray-500'
+                idx === current
+                  ? 'bg-[#ada1f9] scale-125'
+                  : 'bg-gray-400 dark:bg-gray-600 hover:bg-gray-500'
               }`}
             />
           ))}
@@ -153,7 +151,7 @@ const TestimonialsPage = () => {
   };
 
   return (
-    <main className="min-h-screen mt-16 bg-white dark:bg-[#11001f] py-12 px-4 transition-colors duration-300">
+    <main className="min-h-screen mt-16 py-12 px-4 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">

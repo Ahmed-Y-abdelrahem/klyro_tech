@@ -1,5 +1,6 @@
 import user_image from './user-image.png';
 import my_image from './my-image.png';
+import klyrotech_logo from "./klyrotech.png"
 import my_img_green from './my_img_green.jpg';
 import logo_usry_green from './logo_usry_green.png';
 import logo_usry_white from './logo_usry_white.png'
@@ -58,6 +59,7 @@ export const assets = {
     my_image,
     meta,
     google,
+    klyrotech_logo,
     my_img_green,
     digital_marketing,
     marketing_icon_dark,
@@ -221,7 +223,7 @@ export const allProjects = [
 // Digital Marketing Testimonials Data
   export const digitalMarketingTestimonials = [
         {
-      name: "Digital Marketing and E-commerce ",
+      name: "Marketing E-commerce ",
       company: "COURSERA",
       description: "Proven expertise in managing high-impact digital marketing campaigns across platforms like Meta and Google Ads, driving significant ROI and enhancing brand visibility in competitive markets.",
       bgImage: '/digital marketing and E-commerce.png',

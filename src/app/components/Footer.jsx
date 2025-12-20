@@ -16,7 +16,7 @@ const Footer = () => {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className="mt-5 transition-all duration-500">
+    <div className={`pt-2 transition-all duration-500 ${isDarkMode ? "bg-gray-800" : "bg-gray-100"}`}>
       <div className="text-center">
         {/* ✅ اللوجو يتغير حسب الوضع */}
         <Image
@@ -28,7 +28,7 @@ const Footer = () => {
         />
 
         {/* ✅ الإيميل */}
-        <div className="w-max flex items-center gap-3 mb-2 mx-auto">
+        <div className=" w-max flex items-center gap-3 mb-2 mx-auto " >
           <Image
             key={theme}
             src={assets.mail_icon}

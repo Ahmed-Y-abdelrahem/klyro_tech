@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full flex flex-col justify-center items-center text-center gap-4 mt-20 mb-10 px-6 sm:px-12 scroll-mt-24 
+      className="w-full flex flex-col justify-center items-center text-center gap-4 mt-20  px-6 sm:px-12 scroll-mt-24 
       bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-contain sm:bg-cover py-16 transition-colors duration-700 
       dark:bg-[url('/footer-bg-color-dark.png')]"
     >

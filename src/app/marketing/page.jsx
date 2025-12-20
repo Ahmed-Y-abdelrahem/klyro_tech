@@ -14,9 +14,9 @@ const MarketingCarousel = () => {
 
   return (
     <div className="relative mb-16">
-      <div className="relative h-[600px] sm:h-[500px] md:h-[600px] flex items-center justify-center">
+      <div className="relative flex items-center justify-center w-full min-h-[500px] sm:min-h-[500px] md:min-h-[600px]">
 
-        {/* Navigation Buttons - Outside Card */}
+        {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
           className="absolute sm:left-0 -left-8 z-30 p-3 bg-[#ada1f9] rounded-xl shadow-lg hover:scale-110 transition-all"
@@ -31,7 +31,7 @@ const MarketingCarousel = () => {
           <ChevronRight size={24} className="text-white dark:text-[#11001f]" />
         </button>
 
-        {/* Project Card */}
+        {/* Carousel Cards */}
         <div className="relative w-full max-w-6xl h-full">
           <AnimatePresence mode="wait">
             {marketingResults.map((project, index) => {
@@ -43,7 +43,7 @@ const MarketingCarousel = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-                  className="relative w-full h-full bg-white dark:bg-[#11001f] rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-2xl flex flex-col md:flex-row p-4 md:p-8"
+                  className="relative w-full h-full bg-white dark:bg-[#11001f] rounded-3xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-2xl flex flex-col md:flex-row p-4 md:p-8 gap-6"
                 >
                   {/* Campaign Image */}
                   <div className="md:w-1/2 flex items-center justify-center mb-4 md:mb-0">
@@ -61,11 +61,9 @@ const MarketingCarousel = () => {
                   {/* Project Details */}
                   <div className="md:w-1/2 flex flex-col justify-between md:pl-8">
                     <div>
-                      <div className="flex items-center gap-2 mb-4">
+                      <div className="flex flex-wrap items-center gap-2 mb-4">
                         <TrendingUp className="text-[#ada1f9]" size={20} />
-                        <span className="font-Ovo text-[#ada1f9] text-sm">
-                          {project.category}
-                        </span>
+                        <span className="font-Ovo text-[#ada1f9] text-sm">{project.category}</span>
                       </div>
 
                       <h3 className="text-2xl md:text-3xl font-bold font-Ovo text-gray-900 dark:text-white mb-4">
@@ -131,7 +129,7 @@ const MarketingCarousel = () => {
 
 const MarketingPage = () => {
   return (
-    <main className="min-h-screen mt-16 bg-white dark:bg-[#11001f] py-8 px-4 transition-colors duration-300">
+    <main className="min-h-screen mt-16 py-8 px-4 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -149,7 +147,7 @@ const MarketingPage = () => {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {marketingStats.map((stat, index) => (
             <motion.div
               key={stat.label}
