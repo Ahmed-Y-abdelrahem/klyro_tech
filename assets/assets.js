@@ -4,6 +4,9 @@ import klyrotech_logo from "./klyrotech.png"
 import my_img_green from './my_img_green.jpg';
 import logo_usry_green from './logo_usry_green.png';
 import logo_usry_white from './logo_usry_white.png'
+import top_arrow from './top-arrow-white.png'
+import top_arrow_black from './top-arrow-black.png'
+
 import last_web from "./last-web.webp"
 import marketing_icon_dark from './goal-dark.png'
 import meta from "./meta.png";
@@ -30,6 +33,7 @@ import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
+import openWhatsApp from './openWhatsApp.webp'
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
@@ -59,8 +63,10 @@ export const assets = {
     my_image,
     meta,
     google,
+    top_arrow,
     klyrotech_logo,
     my_img_green,
+    openWhatsApp,
     digital_marketing,
     marketing_icon_dark,
     logo_usry_white,
@@ -72,6 +78,7 @@ export const assets = {
     last_web,
     ashref,
     seo,
+    top_arrow_black,
     linkedIn,
     my_logo,
     code_icon,

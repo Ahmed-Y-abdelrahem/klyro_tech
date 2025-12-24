@@ -34,12 +34,12 @@ const Contact = () => {
       dark:bg-[url('/footer-bg-color-dark.png')]"
     >
       {/* 📨 العناوين */}
-      <p className="font-Ovo text-lg text-gray-500 dark:text-gray-300">Connect with me</p>
-      <h2 className="text-4xl font-bold font-Ovo text-black dark:text-white">Get in touch</h2>
+      <p className="font-Ovo text-lg text-gray-500 dark:text-gray-300">Get in touch with us</p>
+      <h2 className="text-4xl font-bold font-Ovo text-black dark:text-white">Contact Our Team</h2>
 
       <p className="text-center max-w-4xl text-gray-500 font-Ovo mt-4 mb-6 dark:text-gray-300">
-        I’d love to hear from you! Whether you have a project in mind, a question, 
-        or just want to connect — feel free to reach out and get in touch.
+        Have a project in mind or questions about our services?  
+        Our team is ready to assist you. Reach out and we’ll respond promptly.
       </p>
 
       {/* 📬 الفورم */}
@@ -48,7 +48,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8 mt-10">
           <input
             type="text"
-            placeholder="Enter Your Name"
+            placeholder="Your Name"
             required
             className="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md 
                        bg-white dark:bg-gray-900 dark:text-white transition duration-500"
@@ -56,7 +56,7 @@ const Contact = () => {
           />
           <input
             type="email"
-            placeholder="Enter Your Email"
+            placeholder="Your Work Email"
             required
             className="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md 
                        bg-white dark:bg-gray-900 dark:text-white transition duration-500"
@@ -67,7 +67,7 @@ const Contact = () => {
         <textarea
           rows={6}
           required
-          placeholder="Enter your message"
+          placeholder="Your Message"
           className="w-full p-3 outline-none border-[0.5px] border-gray-400 rounded-md 
                      bg-white dark:bg-gray-900 dark:text-white mb-6 transition duration-500"
           name="message"
@@ -80,7 +80,7 @@ const Contact = () => {
              bg-[#ada1f9] rounded-full p-4 text-white dark:text-[#11001f] font-Ovo text-lg gap-3 
              hover:opacity-80 transition duration-500"
         >
-          Submit
+          Send Message
         </button>
 
         <p className="mt-5 text-gray-600 dark:text-gray-300">{result}</p>
