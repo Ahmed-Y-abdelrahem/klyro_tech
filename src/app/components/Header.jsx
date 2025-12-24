@@ -86,7 +86,7 @@ const Header = () => {
       {/* Company Intro */}
       <div className="flex justify-start items-center gap-3">
         <h6 className="text-2xl font-bold font-Ovo text-gray-500 dark:text-gray-300">
-         Grow Smarter with KlyroTech <Image src={assets.hand_icon} alt="" className="w-6" />
+         Grow Smarter with KlyroTech
         </h6>
         
       </div>
