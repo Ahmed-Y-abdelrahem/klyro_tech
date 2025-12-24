@@ -84,7 +84,7 @@ const Header = () => {
       </div>
 
       {/* Company Intro */}
-      <div className="flex items-center gap-3">
+      <div className="flex justify-start items-center gap-3">
         <h6 className="text-2xl font-bold font-Ovo text-gray-500 dark:text-gray-300">
          Grow Smarter with KlyroTech
         </h6>
@@ -105,7 +105,7 @@ const Header = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 mt-4">
+      <div className="flex justify-center flex-col sm:flex-row gap-4 mt-4">
         {/* Contact */}
         <a
           href="#contact"
